@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оставить комментарий</title>
+    <script src="/static/comment.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/mgnt.css">
+</head>
+<body onLoad="onload()">
+    <div class="content">
+        <p><a href="/comment/">Оставить комментарий</a>&nbsp;<a href="/view/">Просмотр комментариев</a>&nbsp;<a href="/stat/">Статистика</a> </p>
+        <form>
+            Фамилия:<br>
+            <input id="sname" type="text" name="sname"><br>
+            Имя:<br>
+            <input id="fname" type="text" name="fname"><br>
+            Отчество:<br>
+            <input id="pname" type="text" name="pname"><br>
+            Регион:<br>
+            <select id="region" name="region" onchange="onRegionChange();"></select><br>
+            Город:<br>
+            <select id="city" name="city"></select><br>
+            Телефон:<br>
+            <input id="phone" type="text" name="phone"><br>
+            E-mail:<br>
+            <input id="email" type="email" name="email"><br>
+            Комментарий:<br>
+            <textarea id="comment" name="comment"></textarea><br>
+        </form>
+        <button id="addbutton" onclick="onAddButtonClick();">Добавить</button>
+        <div id="log"></div>
+    </div>
+</body>
+</html>

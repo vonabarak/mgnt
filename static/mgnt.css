@@ -1,0 +1,27 @@
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+}
+thead {
+  font-weight: bold;
+  border: 1px solid black;
+}
+body {
+  background-color: lightgrey;
+}
+form {
+  border: 1px solid black;
+  padding: 5px;
+}
+.content {
+  background-color: lightgrey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding: 5px;
+  width: 85%;
+}
